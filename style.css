@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    user-select: none;
+    overflow-x: hidden !important;
+}
+
+@media (orientation:landscape) {
+
+    .botaoNamo, .botaoNiver2019, .botaoViagem {
+        margin: 40px !important;
+        height: 30vh !important;
+    }
+}
+
+.bolhas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bolhas li{
+    position: absolute;
+    list-style: none;
+    display: block;
+    background: rgba(217, 255, 0, 0.329);
+    animation: goDown 25s linear infinite;
+    bottom: -20%;
+    animation-duration: 50%;
+}
+
+.bolhas li:nth-child(1){
+    left: 76%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 0;
+}
+
+.bolhas li:nth-child(2){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 6s;
+}
+
+.bolhas li:nth-child(3){
+    left: 70%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 3s;
+}
+
+.bolhas li:nth-child(4){
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 17s;
+}
+
+.bolhas li:nth-child(5){
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0s;
+}
+
+.bolhas li:nth-child(6){
+    left: 90%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 5s;
+}
+
+.bolhas li:nth-child(7){
+    left: 30%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 8s;
+}
+
+.bolhas li:nth-child(8){
+    left: 60%;
+    width: 55px;
+    height: 55px;
+    animation-delay: 11s;
+}
+
+.bolhas li:nth-child(9){
+    left: 7%;
+    width: 130px;
+    height: 130px;
+    animation-delay: 7s;
+}
+
+.bolhas li:nth-child(10){
+    left: 15%;
+    width: 65px;
+    height: 65px;
+    animation-delay: 9s;
+}
+
+.bolhas li:nth-child(11){
+    left: 30%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 19s;
+}
+
+.bolhas li:nth-child(12){
+    left: 58%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 15s;
+}
+
+.bolhas li:nth-child(13){
+    left: 48%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 3s;
+}
+
+.bolhas li:nth-child(14){
+    left: 23%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 12s;
+}
+
+.bolhas li:nth-child(15){
+    left: 34%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 24s;
+}
+
+@keyframes goDown{
+    from{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    to{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #262626;
+}
+
+.titulo{
+    color: rgb(248, 211, 2);
+    text-shadow:  5px  5px #1a1919;
+    padding: 3%;
+    font-size: 8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botaoNamo, .botaoNiver2019, .botaoViagem {
+    width: 45%;
+    height: 15vh;
+    margin: 10%;
+    margin-top: 15%;
+    font-size: 1.8em;
+}
+
+@media(max-width: 600px){
+    .titulo{
+        font-size: 4em;
+    }
+
+    .botaoNamo, .botaoNiver2019, .botaoViagem {
+        width: 45%;
+        height: 22vh;
+        margin: 5%;
+        margin-top: 15%;
+        font-size: 1.5em;
+    }
+
+    body{
+        height: 100vh;
+        width: 100%;
+        background-color: #262626;
+    }
+}

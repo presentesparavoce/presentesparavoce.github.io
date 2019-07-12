@@ -1,0 +1,10 @@
+#pip install emoji
+
+import emoji as e
+
+arquivo = open("Coracoes.txt","+w")
+heart = u"\u2661"
+i = 0
+while i < 100:
+    print(heart, end=' ')
+    i = i + 1

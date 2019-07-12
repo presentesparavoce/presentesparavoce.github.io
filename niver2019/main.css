@@ -1,0 +1,182 @@
+@keyframes fadeEverythingOut{
+    from{
+        opacity: 0;
+    }
+    to{
+        background-color: #070707;
+        opacity: 1;
+    }
+}
+
+body{
+    background-color: #262626;
+}
+
+.fadeAllOut{
+    transition: all ease 1.5s;
+    animation: all ease fadeEverythingOut 1.5s;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+.container-fluid{
+    user-select: none;
+    background-color: #02020B;
+    color: #FFFFCC;
+}
+
+@font-face {
+    font-family: TitleFont;
+    src: url(Sketch.ttf);
+}
+
+.titulo{
+    font-family: TitleFont, sans-serif;
+    text-decoration: none;
+    font-size: 7em;
+    animation: ease 2s fadeInTitulo forwards;
+}
+
+@font-face {
+    font-family: TextFont;
+    src: url(REXMONE\ ITALIC-DEMO\ VERSION.ttf);
+}
+
+.carta:not(.texto5){
+    color: rgb(245, 245, 195);
+    font-family: TextFont, sans-serif;
+    font-size: 1.75em;
+    position: relative;
+    animation: ease-out 2.5s fadeText forwards;
+    text-align: justify;
+    white-space: pre-wrap;
+}
+
+.texto5{
+    color: rgb(245, 245, 195);
+    font-family: TextFont, sans-serif;
+    font-size: 1.75em;
+    animation: ease-out 2.5s fadeText forwards;
+    text-align: center;
+}
+
+.carta u{
+    font-size: 2.2em;
+}
+
+.texto1 > span{
+    text-align: center;
+}
+
+.texto1 i{
+    font-size: 3.5em;
+    margin: 0 auto;
+}
+
+.coracao{
+    padding: 50px;
+    animation: ease 1.5s imagesFade forwards;
+    opacity: 0.8;
+    filter: blur(0.6px);
+}
+
+.fotoNossa{
+    border-radius: 15px;
+    border: 20px double #0D1321;
+    animation: ease-in 2.5s fotoNossaFade forwards;
+    margin: 3px;
+}
+
+@font-face {
+    font-family: RodapeFont;
+    src: url(anthusia.ttf);
+}
+
+.rodape{
+    background-color: #000100;
+    color: rgb(199, 199, 169);
+    font-family: RodapeFont, sans-serif;
+}
+
+.textoRodape{
+    padding: 1.5%;
+}
+
+.foto{
+    transition: ease-in 0.3s;
+}
+
+.foto:hover{
+    padding: 0.6%;
+}
+
+.mouse:hover{
+    cursor: url(http://cur.cursors-4u.net/games/gam-11/gam1081.png), auto;
+}
+
+@media (max-width: 600px){
+    .titulo{
+        font-size: 3.3em;
+        padding-top: 0;
+    }
+    .img-fluid{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .textoRodape{
+        font-size: 1.25em;
+    }
+    .carta{
+        font-size: 1.2em;
+    }
+    .coracao{
+        filter: blur(0px);
+    }
+}
+
+@keyframes fadeText{
+    from{
+        top: 90%;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 0.7;
+    }
+}
+
+@keyframes fotoNossaFade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.85;
+    }    
+}
+
+@keyframes imagesFade{
+    from{
+        width: 0;
+        height: 0;
+    }
+    to{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes fadeInTitulo{
+    from{
+        width: 10%;
+        opacity: 0.1;
+    }
+    to{
+        width: 100%;
+        opacity: 0.8;
+    }
+}
